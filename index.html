@@ -33,7 +33,7 @@
   h3{
 
     text-align: center;
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -50,15 +50,15 @@
     opacity: 1;
   }
   .series{
-    background-image: url("pokemon.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("WeBearBears.jpg");
+    background-size: cover;
     height: 150px;
     width: 500px;
-    z-index: 1;
 
 
   }
   .juegos{
-    background-image: url("amongus.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("YOSHIS.jpg");
     height: 150px;
     width: 500px;
 
@@ -66,7 +66,7 @@
 
   }
   .personal{
-    background-image: url("flash.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("ositos.jpg");
     height: 320px;
     width: 500px;
 
@@ -91,12 +91,33 @@
       margin-top: 20px;
       line-height: 40px;
     }
-    div{
-      margin: 20px 12px 0 12px;
-    }
+    .series{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("WeBearBears.jpg");
+      background-size: cover;
+      height: 150px;
+      width: 500px;
 
-    small{
-      font-size:16px;
+
+    }
+    .juegos{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("YOSHIS.jpg");
+      background-size: cover;
+      height: 150px;
+      width: 500px;
+    }
+    .personal{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("ositos.jpg");
+      height: 150px;
+      width: 500px;
+      position: relative;
+      left: 0px;
+      top: 0px;
+    }
+    .categorias{
+      height: 500px;
+      width: 500px;
+      margin: 0 auto;
+
     }
   }
   </style>
@@ -106,7 +127,7 @@
   <h1>Jessygurumis</h1>
   <h2>Creados para ti</h2>
 <nav class = "categorias">
-  <a href="pelisYseries/pelisYseries.html"><div class="series">
+  <a href="pelisYseries/pelisYseries.html">
 
 
   <div class="series">
@@ -118,18 +139,22 @@
 
 </a>
 
-  <div class="juegos">
-    <h3>
-      Videojuegos
-    </h3>
-  </div>
+  <a href="#">
+    <div class="juegos">
+      <h3>
+        Videojuegos
+      </h3>
+    </div>
+  </a>
 
-  <div class = "personal">
-    <h3>
-      Diseños Especiales
-    </h3>
-  </nav>
-</div>
+  <a href="#">
+    <div class = "personal">
+      <h3>
+        Diseños Especiales
+      </h3>
+    </div>
+  </a>
+</nav>
   <script>
 //    $('div').on('click', function() {
 //      $(this).toggleClass('show-description');
